@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="https://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.css">
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script>
@@ -19,10 +20,12 @@
   </header>
   <article data-role="content">
     <div id="land_intro">
-      Using CollabLearn, you can learn new technologies along side your friends. It will be fun, collaborative and effective
+      <i class="fa fa-cubes"></i>
+      <h2>CollabLearn</h2>
+      <p>Using <strong>CollabLearn</strong>, you can learn new technologies along side your friends. It will be fun, collaborative and effective</p>
     </div>
 
-            <a href="#dash" class="ui-btn ui-btn-active" data-transition="flip" style="background-color: #38C; color: #FFF; text-shadow: none;"><i class="fa fa-facebook fa-2x" style="margin-right: 10px;"></i> Connect with Facebook</a>
+            <a href="#dash" id="fb-connect" data-transition="flip"><i class="fa fa-facebook"></i> Connect with Facebook</a>
 
 </article>
 </div><!-- Page Land -->
@@ -31,13 +34,57 @@
   <header data-role="header">
     <h1 style="text-align: center;">CollabLearn</h1>
   </header>
-  <article data-role="content">
-    <h1 style="text-align: center;">What do you want to learn?</h1>
+  <article data-role="content" id="create_plan">
+      <h1 style="text-align: center;">I want to learn</h1>
 
-    <form method="post" action="demoform.asp">
-      <input type="text" name="fname" id="fname">
-      <a href="#collab" class="ui-btn" data-transition="slide">Start Learning</a>
-    </form>
+      <form method="post" action="demoform.asp">
+        <input type="text" name="fname" id="fname">
+        <a href="#collab"  data-transition="slide">Start Learning</a>
+      </form>
+  </article>
+  <article id="feed">
+    <h3>Friend Activity</h3>
+
+    <div class="feed_item">
+      <div class="time">26 mins ago</div>
+      <img src="images/rajni.jpg">
+      <div class="name">John Jaffa</div>
+      <div class="details">
+          completed learning
+          <span>Java</span>
+      </div>
+    </div>
+
+    <div class="feed_item">
+      <div class="time">26 mins ago</div>
+      <img src="images/rajni.jpg">
+      <div class="name">John Jaffa</div>
+      <div class="details">
+          completed learning
+          <span>Java</span>
+      </div>
+    </div>
+
+    <div class="feed_item">
+      <div class="time">26 mins ago</div>
+      <img src="images/rajni.jpg">
+      <div class="name">John Jaffa</div>
+      <div class="details">
+          completed learning
+          <span>Java</span>
+      </div>
+    </div>
+
+    <div class="feed_item">
+      <div class="time">26 mins ago</div>
+      <img src="images/rajni.jpg">
+      <div class="name">John Jaffa</div>
+      <div class="details">
+          completed learning
+          <span>Java</span>
+      </div>
+    </div>
+
   </article>
   <footer data-role="footer" data-position="fixed">
     <nav data-role="navbar">
